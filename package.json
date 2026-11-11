@@ -1,0 +1,43 @@
+{
+  "name": "examenes-test-qr",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:movil": "vite --mode movil --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.worker.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench:escaner": "tsx tests/bench/run-bench.ts",
+    "fotos:escaner": "tsx tests/bench/run-fotos.ts",
+    "deploy": "vite build && wrangler deploy"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "1.1.1",
+    "hono": "4.13.14",
+    "jsqr": "1.4.0",
+    "pdf-lib": "1.17.1",
+    "qrcode": "1.5.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.66.0",
+    "@types/node": "26.6.5",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-basic-ssl": "2.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "jpeg-js": "0.4.4",
+    "mupdf": "1.28.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5",
+    "wrangler": "4.154.0"
+  }
+}
