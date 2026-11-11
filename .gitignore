@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+*.local
+.claude/settings.local.json
+DOCUMENTACION-CLAUDE.md
+tests/bench/out/
